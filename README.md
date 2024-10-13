@@ -29,8 +29,15 @@ Bem-vindo ao **CRUD Project**, desenvolvido por **Rodrigo Costa**. Este reposit√
 
 2. **Criar a base de dados:**
 
-   ```bash
-  CREATE DATABASE crudproject;
+    CREATE DATABASE crudproject;
+
+    USE crudproject;
+
+    CREATE TABLE member(
+        id int AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(50),
+        phonenumber VARCHAR(11)
+    );
 
 3. **Configure o Arquivo env.ini:**
 
@@ -71,8 +78,15 @@ Welcome to the **CRUD Project**, developed by **Rodrigo Costa**. This repository
 
 2. **Create the Database:**
 
-   ```bash
-  CREATE DATABASE crudproject;
+    CREATE DATABASE crudproject;
+
+    USE crudproject;
+
+    CREATE TABLE member(
+        id int AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(50),
+        phonenumber VARCHAR(11)
+    );
 
 3. **Configure the env.ini File:**
 

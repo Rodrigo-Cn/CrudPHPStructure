@@ -21,8 +21,8 @@
                 3306
             );
 
-            if (self::$connection === false) {
-                throw new Exception("Falha na conexão: " . mysqli_connect_error());
+            if (self::$connection->connect_error) {
+                die(self::$connection->connect_error);
             }
 
             return self::$connection;
