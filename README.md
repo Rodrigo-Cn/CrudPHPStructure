@@ -25,7 +25,7 @@ Bem-vindo ao **CRUD Project**, desenvolvido por **Rodrigo Costa**. Este reposit√
 1. **Clone o Reposit√≥rio:**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/Rodrigo-Cn/CrudPHPStructure
 
 2. **Criar a base de dados:**
 
@@ -74,7 +74,7 @@ Welcome to the **CRUD Project**, developed by **Rodrigo Costa**. This repository
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Rodrigo-Cn/CrudPHPStructure
 
 2. **Create the Database:**
 
