@@ -1,6 +1,6 @@
 <?php
 
-    require_once dirname(__FILE__,2) . '/public/routes/web.php';
+    require_once dirname(__FILE__,2) . '\projectcrud\public\routes\web.php';
     
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
@@ -8,6 +8,7 @@
     
     $requestMethod = $_SERVER['REQUEST_METHOD'];
     $requestUri = rtrim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+    
     
     function matchRoute($routes, $method, $uri) {
         foreach ($routes as $route) {
@@ -26,7 +27,7 @@
     if ($routeMatch) {
         list($controllerName, $methodName) = explode('@', $routeMatch['handler']);
     
-        $controllerFile = dirname(__FILE__,2) . "/src/controllers/{$controllerName}.php";
+        $controllerFile = dirname(__FILE__,2) . "\projectcrud\src\controllers\{$controllerName}.php";
     
         if (file_exists($controllerFile)) {
             require_once $controllerFile;
